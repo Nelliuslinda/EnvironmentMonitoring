@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main";
+    height: 100vh;
+}
+
+.header{
+    grid-area: header;
+    height: 70px;
+    background-color: #283618;
+}
+
+.main-container{
+    grid-area: main;
+    background-color: #606c38;
+}
+
